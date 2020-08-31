@@ -1,5 +1,26 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import Home from "../animated-icons/Home.json";
+import Chat from "../animated-icons/Chat.json";
+import Works from "../animated-icons/Works.json";
+import AboutMe from "../animated-icons/AboutMe2.json";
+import { Link } from "react-scroll";
+import Lottie from "lottie-react-web";
+
+const findIcon = (title) => {
+  switch (title) {
+    case "Home":
+      return Home;
+    case "Contact":
+      return Chat;
+    case "Works":
+      return Works;
+    case "AboutMe":
+      return AboutMe;
+    default:
+      return null;
+  }
+};
 
 const variants = {
   open: {
@@ -20,19 +41,25 @@ const variants = {
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-const MenuItem = ({ i }) => {
+const MenuItem = ({ i, iconName, title }) => {
   const style = { border: `2px solid ${colors[i]}` };
   return (
-    <motion.li
-      variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div className="icon-placeholder" style={style}>
-        {" "}
-      </div>
-      <div className="text-placeholder" style={style} />
-    </motion.li>
+    <Link to={title} smooth>
+      <motion.li
+        variants={variants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <div className="icon-placeholder">
+          <Lottie
+            options={{
+              animationData: findIcon(iconName),
+            }}
+          />{" "}
+        </div>
+        <div className="text-placeholder">{title}</div>
+      </motion.li>
+    </Link>
   );
 };
 

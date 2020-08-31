@@ -7,9 +7,12 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "framer-motion": "^2.6.5",
+    "lottie-react-web": "^2.2.2",
+    "lottie-web": "^5.7.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

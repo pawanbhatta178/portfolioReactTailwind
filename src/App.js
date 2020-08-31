@@ -8,7 +8,7 @@ function App() {
       <Header />
       <SideBar />
       <ScrollProgress />
-      <div className="sm:px-32 px-4">
+      <div className="sm:px-32 px-4" id="Works">
         {" "}
         Elit elit sint do veniam anim ex. Non adipisicing duis voluptate eu
         Lorem Lorem anim Lorem voluptate dolore eu ut. Mollit adipisicing anim

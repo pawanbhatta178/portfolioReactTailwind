@@ -1,21 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-const svgVariants = {
-  hidden: { rotate: -360 },
-  visible: {
-    rotate: 0,
-    transition: { duration: 1 },
-  },
-};
+import { Link } from "react-scroll";
 
-const pathVariants = {
+const svgVariants = {
   hidden: {
-    opacity: 0,
-    pathLength: 0,
+    x: 500,
   },
   visible: {
-    opacity: 1,
-    pathLength: 1,
+    x: 0,
     transition: {
       duration: 2,
       ease: "easeInOut",
@@ -25,15 +17,18 @@ const pathVariants = {
 
 const Header = () => {
   return (
-    <div className="h-full">
+    <div className="h-full" id="Home">
       <div className="bg-gray-900 p-6 flex justify-center">
-        <div className="logo text-gray-200">
-          <span className="text-2xl font-hairline antialiased normal-case tracking-widest">
-            Pawan
-          </span>
-          <span className="text-2xl font-bold antialiased normal-case tracking-widest">
-            Bhatta
-          </span>
+        <div className="logo text-gray-200 cursor-pointer">
+          <Link to="Home" smooth>
+            {" "}
+            <span className="text-2xl font-hairline antialiased normal-case tracking-widest">
+              Pawan
+            </span>
+            <span className="text-2xl font-bold antialiased normal-case tracking-widest">
+              Bhatta
+            </span>
+          </Link>
         </div>
       </div>
 
@@ -47,17 +42,19 @@ const Header = () => {
             I bring passion to my work everyday
           </div>
           <div className="py-12 md:py-6 text-xl flex justify-center">
-            <button
-              className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg "
-              onClick={() => {
-                console.log("MY WORK");
-              }}
-            >
-              See My Work
-            </button>
+            <Link to="Works" smooth>
+              <button
+                className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg "
+                onClick={() => {
+                  console.log("MY WORK");
+                }}
+              >
+                See My Work
+              </button>
+            </Link>
           </div>
         </div>
-        <svg
+        <motion.svg
           className="small-svg md:w-1/2 w-full px-12 "
           id="a0b12775-6e5f-4473-9cb3-a305020561f5"
           data-name="Layer 1"
@@ -65,6 +62,9 @@ const Header = () => {
           width="900.25"
           height="600.32263"
           viewBox="0 0 925.25 687.32263"
+          variants={svgVariants}
+          initial="hidden"
+          animate="visible"
         >
           <title>online_cv</title>
           <rect
@@ -351,7 +351,7 @@ const Header = () => {
             transform="translate(-137.375 -106.33868)"
             fill="#2f2e41"
           />
-        </svg>
+        </motion.svg>
       </div>
     </div>
   );
