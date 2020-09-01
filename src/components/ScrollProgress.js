@@ -1,16 +1,17 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {
   motion,
   useViewportScroll,
   useSpring,
   useTransform,
 } from "framer-motion";
+import { AppContext } from "../AppProvider";
 
 const styleSVG = {
   position: "fixed",
-  bottom: "5%",
-  right: "5%",
+  bottom: "15%",
+  right: "1%",
 };
 
 const ScrollProgress = () => {
@@ -18,6 +19,7 @@ const ScrollProgress = () => {
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
+  const { themeMode } = useContext(AppContext);
 
   useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
 
@@ -33,7 +35,7 @@ const ScrollProgress = () => {
         <motion.path
           fill="none"
           strokeWidth="2"
-          stroke="white"
+          stroke="currentColor"
           strokeDasharray="0 1"
           d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
           style={{
@@ -47,7 +49,7 @@ const ScrollProgress = () => {
         <motion.path
           fill="none"
           strokeWidth="5"
-          stroke="white"
+          stroke="currentColor"
           d="M14,26 L 22,33 L 35,16"
           initial={false}
           strokeDasharray="0 1"
