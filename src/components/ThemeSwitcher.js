@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
   };
   console.log("THEME MODE: ", themeMode);
   return (
-    <div className="fixed m-5 top-0 right-0 bg-gray-200 w-12 h-12 rounded-full text-gray-900 flex justify-center items-center">
+    <div className="fixed m-5 top-0 right-0 bg-gray-200 w-12 h-12 rounded-full text-gray-900 flex justify-center items-center shadow-xl ">
       {themeMode === "lightTheme" ? (
         <motion.button
           className=" bg-gray-200 w-12 h-12 rounded-full "

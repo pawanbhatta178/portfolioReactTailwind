@@ -4,12 +4,14 @@ import { Link } from "react-scroll";
 
 const svgVariants = {
   hidden: {
-    x: 500,
+    x: 100,
+    opacity: 0,
   },
   visible: {
     x: 0,
+    opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1,
       ease: "easeInOut",
     },
   },
@@ -18,7 +20,7 @@ const svgVariants = {
 const Header = () => {
   return (
     <div className="h-full" id="Home">
-      <div className="bg-gray-900 p-6 flex justify-center">
+      <div className="bg-gray-800 p-6 flex justify-center">
         <div className="logo text-gray-200 cursor-pointer">
           <Link to="Home" smooth>
             {" "}
@@ -32,23 +34,18 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex md:flex-row flex-col sm:px-32 px-4">
+      <div className="flex md:flex-row flex-col sm:px-32 px-4 shadow-lg">
         <div className="md:w-1/2 flex flex-col justify-center flex-grow  py-12">
           <div className="pb-12 text-2xl ">
             Hi, my name is <span className="text-indigo-500">Pawan Bhatta</span>
             , A Full Stack JavaScript Developer
           </div>
-          <div className=" pb-6 text-4xl">
-            I bring passion to my work everyday
+          <div className=" pb-6  text-4xl md:text-5xl">
+            I do not write code, I write my passion...
           </div>
-          <div className="py-12 md:py-6 text-xl flex justify-center">
+          <div className="py-12 md:py-6 text-xl flex justify-center md:justify-start">
             <Link to="Works" smooth>
-              <button
-                className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg "
-                onClick={() => {
-                  console.log("MY WORK");
-                }}
-              >
+              <button className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg ">
                 See My Work
               </button>
             </Link>
@@ -61,7 +58,7 @@ const Header = () => {
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             width="950.25"
-            height="650.32263"
+            height="550.32263"
             viewBox="0 0 925.25 687.32263"
             variants={svgVariants}
             initial="hidden"
