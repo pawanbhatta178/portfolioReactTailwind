@@ -6,6 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 code {
@@ -17,12 +18,23 @@ code {
   padding: 1.5rem;
 }
 
+.watermark {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  opacity: 0.05;
+  font-size: 100px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 100px;
+  z-index: 10;
 }
 
 .background {

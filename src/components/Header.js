@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-
+import Lottie from "lottie-react-web";
+import Heart from "./animated-icons/Heart.json";
 const svgVariants = {
   hidden: {
     x: 100,
@@ -19,19 +20,27 @@ const svgVariants = {
 
 const Header = () => {
   return (
-    <div className="h-full" id="Home">
-      <div className="bg-gray-800 p-6 flex justify-center">
+    <div className="h-full relative" id="Home">
+      <div className="bg-gray-800 p-6 flex justify-center opacity-95">
         <div className="logo text-gray-200 cursor-pointer">
           <Link to="Home" smooth>
             {" "}
             <span className="text-2xl font-hairline antialiased normal-case tracking-widest">
-              Pawan
+              &lt;Pawan
             </span>
             <span className="text-2xl font-bold antialiased normal-case tracking-widest">
-              Bhatta
+              Bhatta/&gt;
             </span>
           </Link>
         </div>
+      </div>
+      <div className="watermark">
+        Welcome!
+        <Lottie
+          options={{
+            animationData: Heart,
+          }}
+        />
       </div>
 
       <div className="flex md:flex-row flex-col sm:px-32 px-4 shadow-lg">
@@ -41,12 +50,18 @@ const Header = () => {
             , A Full Stack JavaScript Developer
           </div>
           <div className=" pb-6  text-4xl md:text-5xl">
-            I do not write code, I write my passion...
+            It's not just code, it's my{" "}
+            <span className="text-indigo-500">passion</span>...
           </div>
           <div className="py-12 md:py-6 text-xl flex justify-center md:justify-start">
             <Link to="Works" smooth>
               <button className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg ">
                 See My Work
+              </button>
+            </Link>
+            <Link to="About" smooth>
+              <button className="bg-gray-200 text-indigo-900 ml-6 border-indigo-900 rounded-lg px-4 py-2 shadow-lg ">
+                More Abt Me
               </button>
             </Link>
           </div>

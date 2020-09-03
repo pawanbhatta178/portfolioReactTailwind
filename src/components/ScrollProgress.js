@@ -12,6 +12,7 @@ const styleSVG = {
   position: "fixed",
   bottom: "15%",
   right: "1%",
+  zIndex: 10,
 };
 
 const ScrollProgress = () => {
