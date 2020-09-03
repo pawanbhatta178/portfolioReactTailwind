@@ -68,7 +68,7 @@ const Header = () => {
         </div>
         <motion.div className="small-svg md:w-1/2 w-full flex ">
           <motion.svg
-            className="px-12"
+            className="px-8"
             id="a0b12775-6e5f-4473-9cb3-a305020561f5"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
