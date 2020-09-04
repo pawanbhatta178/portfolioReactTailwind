@@ -12,7 +12,7 @@ const ThemeSwitcher = () => {
   };
   console.log("THEME MODE: ", themeMode);
   return (
-    <div className="fixed m-5 top-0 right-0 bg-gray-200 w-12 h-12 rounded-full text-gray-900 flex justify-center items-center shadow-xl z-10 ">
+    <div className="fixed m-5 top-0 right-0 bg-gray-200 w-10 h-10 rounded-lg text-gray-900 flex justify-center items-center shadow-xl z-10 ">
       {themeMode === "lightTheme" ? (
         <button
           className=" w-12 h-12 rounded-full "

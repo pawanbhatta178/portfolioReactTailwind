@@ -23,6 +23,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      codeUrl:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      demoUrl: "",
     },
     {
       category: "CATEGORY",
@@ -31,6 +34,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$21.15",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/421x261",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -39,6 +45,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -47,6 +56,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -55,6 +67,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -63,6 +78,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -71,6 +89,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -79,6 +100,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -87,6 +111,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -95,6 +122,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
     {
       category: "Category",
@@ -103,6 +133,9 @@ const AppProvider = ({ children }) => {
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
+      viewCode:
+        "https://drive.google.com/file/d/1z5Hyu5czHAwMSzbhmELQ4rADiczAIP0o/view?usp=sharing",
+      liveDemo: "",
     },
   ]);
 
