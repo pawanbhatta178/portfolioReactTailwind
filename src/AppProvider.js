@@ -17,6 +17,7 @@ const AppProvider = ({ children }) => {
 
   const [projects, setProjects] = useState([
     {
+      id: "1",
       category: "CATEGORY",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -28,6 +29,7 @@ const AppProvider = ({ children }) => {
       demoUrl: "",
     },
     {
+      id: "2",
       category: "CATEGORY",
       title: " Shooting Stars",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -39,6 +41,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "3",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -50,6 +53,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "4",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -61,6 +65,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "5",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -72,6 +77,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "6",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -83,6 +89,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "7",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -94,6 +101,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "8",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -105,6 +113,7 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "9",
       category: "Category",
       title: "Catalyzer",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
@@ -116,8 +125,9 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "10",
       category: "Category",
-      title: "Catalyzer",
+      title: "SecondLast",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -127,8 +137,9 @@ const AppProvider = ({ children }) => {
       liveDemo: "",
     },
     {
+      id: "11",
       category: "Category",
-      title: "Catalyzer",
+      title: "Last",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
