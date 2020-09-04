@@ -7,6 +7,105 @@ const AppProvider = ({ children }) => {
     localStorage.getItem("theme") || "lightTheme"
   );
 
+  const contactDetails = {
+    address: "Jackson Heights, NY",
+    email: "pawanbhatta179@gmail.com",
+    phone: "+17854082250",
+    mapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.98309957685!2d-73.90202772796064!3d40.759321833806474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fa191b4692b%3A0xe573e64fb17e324a!2sJackson%20Heights%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1599175950487!5m2!1sen!2sus",
+  };
+
+  const [projects, setProjects] = useState([
+    {
+      category: "CATEGORY",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "CATEGORY",
+      title: " Shooting Stars",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$21.15",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/421x261",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+    {
+      category: "Category",
+      title: "Catalyzer",
+      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      shortDescription: "$16.00",
+      description: "Lorem ipsuma s dnad",
+      imageUrl: "https://dummyimage.com/420x260",
+    },
+  ]);
+
   useEffect(() => {
     localStorage.setItem("theme", themeMode);
   }, [themeMode]);
@@ -21,7 +120,7 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const value = { themeMode, toggleTheme };
+  const value = { themeMode, toggleTheme, projects, contactDetails };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

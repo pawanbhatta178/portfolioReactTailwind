@@ -55,7 +55,7 @@ const Header = () => {
           </div>
           <div className="py-12 md:py-6 text-xl flex justify-center md:justify-start">
             <Link to="Works" smooth>
-              <button className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg ">
+              <button className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg hover:bg-indigo-600 ">
                 See My Work
               </button>
             </Link>
