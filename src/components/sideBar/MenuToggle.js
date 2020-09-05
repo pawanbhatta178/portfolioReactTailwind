@@ -26,7 +26,7 @@ const MenuToggle = ({ toggle }) => (
           closed: { opacity: 1 },
           open: { opacity: 0 },
         }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       />
       <Path
         variants={{

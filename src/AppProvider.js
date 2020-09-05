@@ -19,7 +19,7 @@ const AppProvider = ({ children }) => {
     {
       id: "1",
       category: "CATEGORY",
-      title: "Catalyzer",
+      title: "Catalytic Hydrocarbon",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -43,7 +43,7 @@ const AppProvider = ({ children }) => {
     {
       id: "3",
       category: "Category",
-      title: "Catalyzer",
+      title: "Hazy Sunlight",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -55,7 +55,7 @@ const AppProvider = ({ children }) => {
     {
       id: "4",
       category: "Category",
-      title: "Catalyzer",
+      title: "Caravan Runaway",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -67,7 +67,7 @@ const AppProvider = ({ children }) => {
     {
       id: "5",
       category: "Category",
-      title: "Catalyzer",
+      title: "Exhausted River",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -79,7 +79,7 @@ const AppProvider = ({ children }) => {
     {
       id: "6",
       category: "Category",
-      title: "Catalyzer",
+      title: "Daisy Morning",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -91,7 +91,7 @@ const AppProvider = ({ children }) => {
     {
       id: "7",
       category: "Category",
-      title: "Catalyzer",
+      title: "Forgiving Sight",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -103,7 +103,7 @@ const AppProvider = ({ children }) => {
     {
       id: "8",
       category: "Category",
-      title: "Catalyzer",
+      title: "Looming Sunday",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -115,7 +115,7 @@ const AppProvider = ({ children }) => {
     {
       id: "9",
       category: "Category",
-      title: "Catalyzer",
+      title: "Revolving Neptune",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -127,7 +127,7 @@ const AppProvider = ({ children }) => {
     {
       id: "10",
       category: "Category",
-      title: "SecondLast",
+      title: "Expanding Universe",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
@@ -139,7 +139,7 @@ const AppProvider = ({ children }) => {
     {
       id: "11",
       category: "Category",
-      title: "Last",
+      title: "Black Black-Hole",
       technolgiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../AppProvider";
 import PopUpProjectContent from "./PopUpProjectContent";
-
+import { motion, AnimatePresence } from "framer-motion";
 function Works() {
   const { projects } = useContext(AppContext);
   const [modalId, setModalId] = useState("");
@@ -27,23 +27,42 @@ function Works() {
     setModalId("");
   };
 
+  const backdropVariants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+    exit: { opacity: 0 },
+  };
+
   return (
     <section className=" body-font" id="Works">
-      {modalId && (
-        <PopUpProjectContent
-          id={modalId}
-          unmountModal={unmountModal}
-          nextModal={getNextModal}
-          prevModal={getPrevModal}
-        />
-      )}
+      <AnimatePresence exitBeforeEnter>
+        {" "}
+        {modalId && (
+          <motion.div
+            className="backdrop"
+            variants={backdropVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            {" "}
+            <PopUpProjectContent
+              id={modalId}
+              unmountModal={unmountModal}
+              nextModal={getNextModal}
+              prevModal={getPrevModal}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="container sm:px-32 px-4 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {projects.map((work) => (
             <div className=" lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="project-card block relative h-48 rounded overflow-hidden">
                 <img
-                  className="project-card"
+                  className="project-card "
                   alt="project-img"
                   className="object-cover object-center w-full h-full block"
                   src={work.imageUrl}
