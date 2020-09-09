@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import Lottie from "lottie-react-web";
-import Heart from "./animated-icons/Heart.json";
 const svgVariants = {
   hidden: {
     x: 100,
@@ -20,43 +18,34 @@ const svgVariants = {
 
 const Header = () => {
   return (
-    <div className="h-full relative" id="Home">
-      <div className="bg-gray-800 p-6 flex justify-center opacity-95">
-        <div className="logo text-gray-200 cursor-pointer">
+    <div className="h-full relative " id="Home">
+      <div className=" p-6 flex justify-center opacity-95">
+        <div className="logo cursor-pointer">
           <Link to="Home" smooth>
             {" "}
-            <span className="text-2xl font-hairline antialiased normal-case tracking-widest">
-              &lt;Pawan
-            </span>
-            <span className="text-2xl font-bold antialiased normal-case tracking-widest">
-              Bhatta/&gt;
+            <span className="text-xl font-bold antialiased normal-case tracking-widest">
+              &lt;Pawan/&gt;
             </span>
           </Link>
         </div>
       </div>
-      <div className="watermark">
-        Welcome!
-        <Lottie
-          options={{
-            animationData: Heart,
-          }}
-        />
-      </div>
+      <div className="watermark">Welcome!</div>
 
       <div className="flex md:flex-row flex-col sm:px-32 px-4 shadow-lg">
-        <div className="md:w-1/2 flex flex-col justify-center flex-grow  py-12">
+        <div className="md:w-1/2 flex flex-col justify-center flex-grow  pb-12 pt-8">
+          <div className=" pb-12  text-4xl md:text-5xl">
+            Let's bring your ideas to life {` `}
+            <span className="text-indigo-500">today!</span>
+          </div>
           <div className="pb-12 text-2xl ">
             Hi, my name is <span className="text-indigo-500">Pawan Bhatta</span>
             , A Full Stack JavaScript Developer
           </div>
-          <div className=" pb-6  text-4xl md:text-5xl">
-            It's not just code, it's my{" "}
-            <span className="text-indigo-500">passion</span>...
-          </div>
-          <div className="py-12 md:py-6 text-xl flex justify-center md:justify-start">
+
+          <div className="py-12 md:pt-2 md:pb-8 text-xl flex justify-center md:justify-start">
             <Link to="Works" smooth>
-              <button className="bg-indigo-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg hover:bg-indigo-600 ">
-                See My Work
+              <button className="bg-pink-700 text-gray-200 rounded-lg px-4 py-2 shadow-lg hover:bg-indigo-600 ">
+                See My Works
               </button>
             </Link>
             <Link to="About" smooth>
@@ -66,7 +55,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <motion.div className="small-svg md:w-1/2 w-full flex ">
+        <motion.div className="small-svg md:w-1/2 w-full flex items-end ">
           <motion.svg
             className="px-8"
             id="a0b12775-6e5f-4473-9cb3-a305020561f5"

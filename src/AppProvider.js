@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   );
 
   const contactDetails = {
-    address: "Jackson Heights, NY",
+    address: "Jackson Heights, NY, USA",
     email: "pawanbhatta179@gmail.com",
     phone: "+17854082250",
     mapUrl:
@@ -18,9 +18,9 @@ const AppProvider = ({ children }) => {
   const [projects, setProjects] = useState([
     {
       id: "1",
-      category: "CATEGORY",
-      title: "Catalytic Hydrocarbon",
-      technolgiesUsed: ["C", "JavaScript", "SQL"],
+      category: "Website",
+      title: "Online Code Editor",
+      technologiesUsed: ["C", "JavaScript", "SQL"],
       shortDescription: "$16.00",
       description: "Lorem ipsuma s dnad",
       imageUrl: "https://dummyimage.com/420x260",
