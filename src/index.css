@@ -227,3 +227,23 @@ li {
   background: rgba(0, 0, 0, 0.5);
   z-index: 11;
 }
+
+.bg-dark-editor {
+  background: rgb(43, 48, 59);
+}
+
+.blinker {
+  height: 20px;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.6s ease-out infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

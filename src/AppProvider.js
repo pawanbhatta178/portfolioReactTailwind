@@ -15,6 +15,64 @@ const AppProvider = ({ children }) => {
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.98309957685!2d-73.90202772796064!3d40.759321833806474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fa191b4692b%3A0xe573e64fb17e324a!2sJackson%20Heights%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1599175950487!5m2!1sen!2sus",
   };
 
+  const tabs = [
+    {
+      id: "1",
+      name: "MySkills",
+      content: [
+        "HTML/CSS/JS",
+        "React",
+        "Redux/ContextAPI",
+        "TailwindCss/Bootstrap",
+        "Webpack",
+        "Node.js",
+        "GraphQL",
+        "Firebase",
+        "npm/yarn",
+        "docker",
+        "GIT",
+        "MySQL/Postgres",
+        "MongoDB/Firestore",
+        "Typescript",
+        "C/C++",
+        "React Native",
+      ],
+    },
+    {
+      id: "2",
+      name: "MyExperience",
+      content: [
+        {
+          "2016-2017":
+            "Maths and Computer Science Tutor at Washburn University, Kansas",
+        },
+        {
+          "2017-2019":
+            "Academic Peer Instructor of Probability and Statistics at Laguardia CC, New York",
+        },
+        { "2019-now": "Freelancer and Web Developer" },
+      ],
+    },
+    {
+      id: "3",
+      name: "MyEducation",
+      content: [
+        {
+          schoolName: "Queens College",
+          year: "2019-2021 Spring",
+          degree: "Bachelor of Science in Computer Science",
+          GPA: "3.96*",
+        },
+        {
+          schoolName: "LaGuardia CC",
+          year: "2017-2019",
+          degree: "Associate of Science in Computer Science",
+          GPA: "3.93",
+        },
+      ],
+    },
+  ];
+
   const [projects, setProjects] = useState([
     {
       id: "1",
@@ -164,7 +222,7 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const value = { themeMode, toggleTheme, projects, contactDetails };
+  const value = { themeMode, toggleTheme, projects, contactDetails, tabs };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

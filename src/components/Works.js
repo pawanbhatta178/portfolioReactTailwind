@@ -34,7 +34,7 @@ function Works() {
   };
 
   return (
-    <section className=" body-font" id="Works">
+    <section className=" body-font shadow-lg" id="Works">
       <AnimatePresence exitBeforeEnter>
         {" "}
         {modalId && (
@@ -58,8 +58,9 @@ function Works() {
 
       <div className="container sm:px-32 px-4 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          {projects.map((work) => (
+          {projects.map((work, index) => (
             <div
+              key={index}
               className=" project-card lg:w-1/4 md:w-1/2 p-4 w-full "
               onClick={() => {
                 setModalId(work.id);

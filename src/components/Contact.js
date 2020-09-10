@@ -67,24 +67,24 @@ function Contact() {
             src={contactDetails.mapUrl}
           ></Iframe>
 
-          <div className="bg-white relative flex flex-wrap py-6 rounded-lg pr-4">
+          <div className="bg-gray-800 text-gray-200 relative flex flex-wrap py-6 rounded-lg pr-4 ">
             <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm">
+              <h2 className="title-font font-medium tracking-widest text-sm text-gray-500">
                 ADDRESS
               </h2>
               <p className="leading-relaxed">{contactDetails.address}</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm">
+              <h2 className="title-font font-medium tracking-widest text-sm text-gray-500">
                 EMAIL
               </h2>
               <a
                 href="mailto:pawanbhatta179@gmail.com"
-                className="text-indigo-500 leading-relaxed"
+                className=" leading-relaxed"
               >
                 {contactDetails.email}
               </a>
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">
+              <h2 className="title-font font-medium tracking-widest text-sm mt-4 text-gray-500">
                 PHONE
               </h2>
               <p className="leading-relaxed">{contactDetails.phone}</p>

@@ -1,46 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import TabSwitcher from "./TabSwitcher";
 import Tab from "./Tab";
-const tabs = [
-  {
-    id: "1",
-    name: "About.js",
-    content: {
-      name: "Pawan Bhatta",
-      email: "pawanbhatta178@gmail.com",
-      education: [
-        { schoolName: "LaGuardia CC", years: "2018-19", GPA: "3.96" },
-        { schoolName: "Queens College", years: "2019-2021", GPA: "3.95*" },
-      ],
-    },
-  },
-  {
-    id: "2",
-    name: "WhoAmI.js",
-    content: {
-      name: "Prabhat Bhatta",
-      email: "pawanbhatta179@gmail.com",
-      education: [
-        { schoolName: "LaGuardia CC", years: "2018-19", GPA: "3.96" },
-        { schoolName: "Queens College", years: "2019-2021", GPA: "3.95*" },
-      ],
-    },
-  },
-];
+import { AppContext } from "../AppProvider";
 
 function About() {
   const [activeTab, setActiveTab] = useState("1");
+  const [activeTabContent, setActiveTabContent] = useState("");
+  const { tabs } = useContext(AppContext);
+
+  useEffect(() => {
+    setActiveTabContent(tabs.filter((tab) => tab.id === activeTab)[0]);
+  }, [activeTab]);
+
   return (
-    <div className="mx-4 sm:mx-32 my-4" id="About">
-      {tabs.map((tab, index) => (
-        <Tab
-          key={index}
-          id={tab.id}
-          name={tab.name}
-          content={tab.content}
-          active={activeTab}
-          setActiveTab={setActiveTab}
-        />
-      ))}
+    <div className="py-24 shadow-lg overflow-hidden">
+      <div className="mx-4 sm:mx-32 my-4 ">
+        <div className=" flex flex-row overflow-hidden" id="About">
+          {tabs.map((tab, index) => (
+            <TabSwitcher
+              key={index}
+              id={tab.id}
+              name={tab.name}
+              content={tab.content}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+          ))}
+        </div>
+        <div className="bg-dark-editor w-full h-screen overflow-x-auto overflow-y-scroll p-4">
+          <div className="">
+            {" "}
+            <Tab
+              code={activeTabContent.content}
+              functionName={activeTabContent.name}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
